@@ -1,0 +1,50 @@
+Screen {
+    &:inline {
+        height: 50vh;
+    }
+    layers: below above;
+    align: center middle;
+}
+
+#container {
+    layer: below;
+}
+
+.floating {
+    layer: above;
+    width: 80%;
+    height: 80%;
+}
+
+#tree-view {
+    display: None;
+    scrollbar-gutter: stable;
+    overflow: auto;
+    width: auto;
+    height: 100%;
+    dock: left;
+}
+
+MyUiApp.-show-tree #tree-view {
+    display: block;
+    max-width: 50%;
+}
+
+
+#code-view {
+    display: None;
+    overflow: auto scroll;
+    min-width: 100%;
+    hatch: right $panel;
+}
+
+MyUiApp.-show-code #code-view {
+    display: block;
+}
+
+#menu {
+}
+
+#code {
+    width: auto;
+}
