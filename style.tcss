@@ -34,3 +34,12 @@ Label {
     height: auto;
     text-align: center;
 }
+
+#folders {
+    height: 80%;
+    overflow-y: scroll;
+}
+
+#folders > Button {
+    width: 50%;
+}

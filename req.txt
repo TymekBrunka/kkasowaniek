@@ -1,3 +1,2 @@
-pytermgui
-pyyaml
 textual
+shutil
